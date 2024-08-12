@@ -7,6 +7,8 @@ const TestingApi = require("../controller/main")
 
  router.get('/',TestingApi.testingApi)
  router.post('/cards',TestingApi.cardData)
+ router.get('/allcards',TestingApi.getAllCards)
+ router.get('/filterbycateogary',TestingApi.getCardsByCategory)
 
 // Export router
 module.exports = router;

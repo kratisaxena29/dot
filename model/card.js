@@ -10,6 +10,40 @@ const cardSchema = new Schema({
         type: String,
         required: true
     },
+    category : {
+        type: String,
+        required: false   
+    },
+    ImageLink : {
+        type: String,
+        required: false   
+    },
+    tags : [
+        {
+            type: String,
+            required: false   
+        }
+    ],
+    twiterLink : {
+        type: String,
+        required: false   
+    },
+    linkedinLink : {
+        type: String,
+        required: false   
+    },
+    facebookLink : {
+        type: String,
+        required: false   
+    },
+    githubLink: {
+        type: String,
+        required: false   
+    },
+    unknownLink : {
+        type: String,
+        required: false   
+    },
     modifiedAt: {
         type: Date,
         default: Date.now

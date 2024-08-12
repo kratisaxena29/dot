@@ -35,7 +35,7 @@ app.use(bodyParser.json());
 
 
 
-let PORT = process.env.PORT  || 8000;
+let PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log(`Server is up and running on ${PORT}..`);
 });
