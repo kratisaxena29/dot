@@ -10,7 +10,8 @@ app.use(cors({
   origin: "*"  
 }))
 
-const MONGODBURI = 'mongodb://127.0.0.1:27017/AwesomeDot'
+// const MONGODBURI = 'mongodb://127.0.0.1:27017/AwesomeDot'
+const MONGODBURI = 'mongodb://admin:6J2UgCqk@3.110.224.141:27017/?authSource=admin'
 
 mongoose.connect(MONGODBURI, {
     useNewUrlParser: true,
